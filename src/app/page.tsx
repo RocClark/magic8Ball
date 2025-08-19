@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+
 import Answer from "../magicComponents/answers";
 
 export default function MagicBall() {
@@ -46,8 +47,9 @@ export default function MagicBall() {
         }`}
       >
         <div className="relative w-0 h-0 border-l-[70px] border-r-[70px] border-b-[120px] border-l-transparent border-r-transparent border-b-gray-500 rotate-180 translate-y-[60px]">
-          <div className="absolute top-[80px] left-[-55px] w-[110px] text-white text-center text-sm rotate-180"></div>
-          <Answer answer={randomAnswer} />
+          <div className="absolute top-[80px] left-[-55px] w-[110px] text-white text-center text-sm rotate-180">
+            <Answer answer={randomAnswer} />
+          </div>
         </div>
       </div>
     </div>
